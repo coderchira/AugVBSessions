@@ -37,12 +37,16 @@ Module  CollectionsExercise
                 Console.WriteLine(item)
         Next item
 
-        Console.WriteLine("The Collection 2 has all the names except Rekha from Collection 1:")
+       
         For Each item In myColl1
             If Not item.Equals("Rekha") Then
                 myColl2.Add(item)
-                Console.WriteLine(item)
             End If
+        Next item
+
+        Console.WriteLine("The Collection 2 has all the names except Rekha from Collection 1:")
+        For Each item In myColl2
+            Console.WriteLine(item)
         Next item
         Console.ReadLine()
 
