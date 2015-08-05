@@ -85,7 +85,7 @@
         Dim resultMsg As String
 
         message1 = "Hurray! This is VB session day 1"
-        message2 = " and we are confident of learning on day 1 !"
+        message2 = "and we are confident of learning on day 1 !"
 
         'concatenation
         ' resultMsg = message1 + message2 ' avoid this 
@@ -93,11 +93,15 @@
         'Console.WriteLine(resultMsg)
         Console.WriteLine("Value of resultMsg is:" & message1 & " " & message2)
 
+
         Dim position As Integer
-        position = InStr(resultMsg.ToUpper(), "VB")
-        Console.WriteLine(position)
+        position = InStr(resultMsg, "and")
+        'insert a space before "and" and store the final message in resultMsg
+        resultMsg = resultMsg.Insert(position - 1, " ")
+        Console.WriteLine(resultMsg)
         Console.ReadLine()
 
+        'position of second occurrence of the word "day"
         Dim position2 As Integer
         position2 = InStr(position + 1, resultMsg, "day")
         Console.WriteLine(position2)
