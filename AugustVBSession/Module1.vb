@@ -48,6 +48,8 @@
         'Dim obj3 As Animal
         'obj3 = New Animal
 
+        CollectionsExercise.AddCollection()
+
         Dim obj4 As New Dog
         obj4.Jump()
         obj4.Walk()
