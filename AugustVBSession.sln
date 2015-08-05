@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AugustVBSession", "AugustVBSession\AugustVBSession.vbproj", "{38EC0238-7CF7-466C-BA96-8A6A39C2E7FC}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MyVBForm", "MyVBForm\MyVBForm.vbproj", "{E53D0125-14BB-4B96-BDE3-66A0E5312522}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{38EC0238-7CF7-466C-BA96-8A6A39C2E7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38EC0238-7CF7-466C-BA96-8A6A39C2E7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38EC0238-7CF7-466C-BA96-8A6A39C2E7FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53D0125-14BB-4B96-BDE3-66A0E5312522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53D0125-14BB-4B96-BDE3-66A0E5312522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53D0125-14BB-4B96-BDE3-66A0E5312522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53D0125-14BB-4B96-BDE3-66A0E5312522}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
