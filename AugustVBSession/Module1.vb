@@ -25,6 +25,43 @@
         'DoThisAsWell()
         'LogicDemo.varForAll = 20
 
+        'Dim obj As New Animal()
+        'obj.Walk()
+        'obj.setName("SomeNewAnimal")
+        'Console.WriteLine(obj.getName())
+
+        ''obj.Age = 20
+        'Console.WriteLine(obj.Age)
+        'obj.Color = "Blue"
+        ''Console.WriteLine(obj.Color)
+
+        'Dim obj2 As New Animal(1)
+        'Console.WriteLine(obj2.Age)
+
+        ''Dog Class
+        'Dim obj3 As New Dog
+        'obj3.Breed = "German shephard"
+        'Console.WriteLine(obj3.Breed)
+        'obj3.MakesSound()
+        'obj3.Jump()
+
+        'Dim obj3 As Animal
+        'obj3 = New Animal
+
+        Dim obj4 As New Dog
+        obj4.Jump()
+        obj4.Walk()
+
+        Dim obj5 As Animal 'base class
+        obj5 = New Dog ' instantiate an object of child class
+        obj5.Walk()
+        obj5.Name = "Bruno"
+        obj5.Color = "brown"
+        CType(obj5, Dog).Jump()
+
+        obj5 = New Cow
+        CType(obj5, Cow).SomeMethod()
+
         ConditionsAndLoops.Run(9, 15, "Bunny")
 
         'Lifecycle of a variable
