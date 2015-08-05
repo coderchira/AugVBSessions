@@ -85,21 +85,31 @@
         Dim resultMsg As String
 
         message1 = "Hurray! This is VB session day 1"
-        message2 = " and we are confident of learning on day 1 !"
+        message2 = "and we are confident of learning on day 1 !"
 
         'concatenation
-        ' resultMsg = message1 + message2 ' avoid this 
+        'resultMsg = message1 + message2 ' avoid this 
         resultMsg = message1 & message2
         'Console.WriteLine(resultMsg)
-        Console.WriteLine("Value of resultMsg is:" & message1 & " " & message2)
-
-        Dim position As Integer
-        position = InStr(resultMsg.ToUpper(), "VB")
+        'Console.WriteLine("Value of resultMsg is:" & message1 & " " & message2)
+        
+        //Adding space on cocatenation 
+         Dim position As Integer
+        position = InStr(resultMsg, "and")
         Console.WriteLine(position)
+        
+        resultMsg =resultMsg.Insert(position-1,"")
+        'resultMsg =resultMsg.Insert(Len(message1),"")
+        Console.WriteLine(resultMsg)
+        Console.ReadLine()
+        
+        Dim position3 As Integer
+        position3 = InStr(resultMsg.ToUpper(), "VB")
+        Console.WriteLine(position3)
         Console.ReadLine()
 
         Dim position2 As Integer
-        position2 = InStr(position + 1, resultMsg, "day")
+        position2 = InStr(position3 + 1, resultMsg, "day")
         Console.WriteLine(position2)
         Console.ReadLine()
 
