@@ -48,24 +48,30 @@
         'Dim obj3 As Animal
         'obj3 = New Animal
 
-        CollectionsExercise.AddCollection()
-
         Dim obj4 As New Dog
         obj4.Jump()
         obj4.Walk()
 
-        Dim obj5 As Animal 'base class
+        'Same object variable can be instantiated to different child class objects
+        Dim obj5 As Animal 'base class handle
         obj5 = New Dog ' instantiate an object of child class
+        'polymorphism
         obj5.Walk()
         obj5.Name = "Bruno"
         obj5.Color = "brown"
+        'converting an object to the type of object instantiated
         CType(obj5, Dog).Jump()
 
         obj5 = New Cow
         CType(obj5, Cow).SomeMethod()
 
+        'Day 3 Exercise
+        CollectionsExercise.AddCollection()
+
+        'Day2
         ConditionsAndLoops.Run(9, 15, "Bunny")
 
+        'Day 1
         'Lifecycle of a variable
         ' Declare
         ' Use 

@@ -19,6 +19,8 @@
     End Sub
 
     Sub New()
+        'usage of protected variable that can be directly accessed within the child class
+        _country = "Germany"
         Console.WriteLine("we are inside the dog class constructor")
     End Sub
 

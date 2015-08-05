@@ -7,6 +7,8 @@
     Private _age As Integer
     Private _color As String
 
+    'A variable that can be accessed by all child classes that inherit from Animal
+    Protected _country As String
     'Behaviour / function / logic / method
 
     'Constructor
